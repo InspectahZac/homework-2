@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cmath>
+#include <stdexcept>  //std::overflow_error
 #include "complex.hpp"
 
 int main() {
@@ -29,7 +31,7 @@ int main() {
 
 	c2 = c3.div(c4);
 	c2.print();
-	std::cout << "Should be 0.372791 - 0.0946746j" << std::endl;
+	std::cout << "Should be 0.372781 - 0.0946746j" << std::endl;
 
 	//Magnitude
 	std::cout << "Magnitude: " << c3.magnitude() << " should be 5" << std::endl;
